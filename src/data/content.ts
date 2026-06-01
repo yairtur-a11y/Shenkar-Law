@@ -52,14 +52,14 @@ export const UI = {
 export const HOME = {
   he: {
     location: "תל אביב · ישראל",
-    introHeading: "שנקר ושות׳ — משרד עו״ד בוטיק",
+    introHeading: "שנקר ושות׳ - משרד עו״ד בוטיק",
     introBody: [
       "שנקר ושות' הוא משרד בוטיק מוביל המתמחה בדיני תאגידים ובמשפט עסקי בינלאומי. המשרד מספק ללקוחותיו שירות ברמה המקצועית הגבוהה ביותר, עם מעורבות אישית, מסירות ויחסי אנוש מצוינים. המשרד מייצג את הלקוחות המובילים והגדולים ביותר במשק (קרנות השקעה, חברות הי-טק, משקיעי הון סיכון) ופועל מול משרדי עורכי הדין הגדולים והבולטים בישראל. המשרד מדורג מדי שנה בדירוג Dun’s 100 כאחד המשרדים הבולטים בישראל בתחומי המיזוגים והרכישות, קרנות השקעה, הייטק ומסחרי בינלאומי. משרד שנקר ושות׳ בעלי ניסיון משמעותי בליווי עסקאות מגוונות בארץ ובעולם, לרבות עסקאות M&A, סבבי השקעה, מימון, מיזמים משותפים ועסקאות מורכבות נוספות.",
     ],
   },
   en: {
     location: "Tel Aviv · Israel",
-    introHeading: "Shenkar & Co. — Boutique Law Firm",
+    introHeading: "Shenkar & Co. - Boutique Law Firm",
     introBody: [
       "Shenkar & Co. is a leading boutique firm specializing in corporate law and international business law. The firm provides its clients with the highest level of professional service, marked by personal involvement, dedication and excellent client relationships. The firm represents leading and major clients in the market, including investment funds, high-tech companies and venture capital investors, and works opposite Israel’s largest and most prominent law firms. The firm is ranked annually by Dun’s 100 as one of Israel’s prominent firms in the fields of mergers and acquisitions, investment funds, high-tech and international commercial law. Shenkar & Co. has significant experience advising on a wide range of transactions in Israel and abroad, including M&A transactions, investment rounds, financing, joint ventures and other complex transactions.",
     ],
@@ -75,7 +75,7 @@ export const PRACTICE_AREAS = {
         num: "01",
         slug: "mergers-acquisitions",
         name: "מיזוגים ורכישות",
-        desc: "תחום המיזוגים והרכישות (M&A) עוסק בליווי משפטי מקיף של עסקאות מורכבות, שבהן חברות נרכשות, נמכרות או מתמזגות. צוות המשרד מוביל את הלקוחות בכל שלבי העסקה — מבדיקת נאותות מעמיקה, דרך תכנון מבנה העסקה וניהול משא ומתן, ועד לעריכת כלל ההסכמים והטיפול באישורים רגולטוריים. אנו פועלים לצד מנהלים, יזמים ומשקיעים כדי לבנות עסקאות בטוחות, יעילות ויצירתיות, וללוות את החברות גם לאחר השלמת העסקה. עבודה בתחום מאפשרת חשיפה לעסקאות משמעותיות במשק, חשיבה אסטרטגית ויישום משפט מסחרי ברמה הגבוהה ביותר.",
+        desc: "תחום המיזוגים והרכישות (M&A) עוסק בליווי משפטי מקיף של עסקאות מורכבות, שבהן חברות נרכשות, נמכרות או מתמזגות. צוות המשרד מוביל את הלקוחות בכל שלבי העסקה - מבדיקת נאותות מעמיקה, דרך תכנון מבנה העסקה וניהול משא ומתן, ועד לעריכת כלל ההסכמים והטיפול באישורים רגולטוריים. אנו פועלים לצד מנהלים, יזמים ומשקיעים כדי לבנות עסקאות בטוחות, יעילות ויצירתיות, וללוות את החברות גם לאחר השלמת העסקה. עבודה בתחום מאפשרת חשיפה לעסקאות משמעותיות במשק, חשיבה אסטרטגית ויישום משפט מסחרי ברמה הגבוהה ביותר.",
       },
       {
         num: "02",
@@ -117,13 +117,13 @@ export const PRACTICE_AREAS = {
         num: "01",
         slug: "mergers-acquisitions",
         name: "Mergers & Acquisitions",
-        desc: "The mergers and acquisitions (M&A) practice provides comprehensive legal support for complex transactions in which companies are acquired, sold or merged. The firm’s team leads clients through every stage of the transaction — from in-depth due diligence, through transaction structuring and negotiations, to drafting all agreements and handling regulatory approvals. We work alongside executives, entrepreneurs and investors to build secure, efficient and creative transactions, and continue advising companies after closing. The practice provides exposure to significant market transactions, strategic thinking and commercial law at the highest level.",
+        desc: "The mergers and acquisitions (M&A) practice provides comprehensive legal support for complex transactions in which companies are acquired, sold or merged. The firm’s team leads clients through every stage of the transaction - from in-depth due diligence, through transaction structuring and negotiations, to drafting all agreements and handling regulatory approvals. We work alongside executives, entrepreneurs and investors to build secure, efficient and creative transactions, and continue advising companies after closing. The practice provides exposure to significant market transactions, strategic thinking and commercial law at the highest level.",
       },
       {
         num: "02",
         slug: "high-tech-venture-capital",
         name: "High-Tech & Venture Capital",
-        desc: "The firm’s high-tech and venture capital practice focuses on advising technology companies, entrepreneurs and investors throughout the company’s entire life cycle — from early formation stages, through fundraising rounds, to strategic transactions and exits. We lead complex investment processes, draft and manage investment agreements, founders’ agreements, service contracts, option grants and more, combining deep business understanding with high-level legal expertise.",
+        desc: "The firm’s high-tech and venture capital practice focuses on advising technology companies, entrepreneurs and investors throughout the company’s entire life cycle - from early formation stages, through fundraising rounds, to strategic transactions and exits. We lead complex investment processes, draft and manage investment agreements, founders’ agreements, service contracts, option grants and more, combining deep business understanding with high-level legal expertise.",
       },
       {
         num: "03",
@@ -159,7 +159,7 @@ export const ABOUT = {
     title: "המשרד",
     body: [
       "שנקר ושות׳ הוא משרד עורכי דין בוטיק המתמחה בעסקאות מסחריות מורכבות, מיזוגים ורכישות, ומימון סיכון. המשרד מלווה חברות ישראליות ובינלאומיות, משקיעים מוסדיים ויזמים בפרויקטים בעלי היקפים משמעותיים.",
-      "עם ניסיון של עשרות שנים ועומק מקצועי רב, הצוות שלנו מספק שירות אישי ומדויק — מהשלב הראשון ועד סגירת העסקה.",
+      "עם ניסיון של עשרות שנים ועומק מקצועי רב, הצוות שלנו מספק שירות אישי ומדויק - מהשלב הראשון ועד סגירת העסקה.",
     ],
   },
   en: {
@@ -167,7 +167,7 @@ export const ABOUT = {
     title: "The Firm",
     body: [
       "Shenkar & Co. is a boutique law firm specializing in complex commercial transactions, mergers and acquisitions, and venture capital. The firm advises Israeli and international companies, institutional investors and entrepreneurs on high-value projects.",
-      "With decades of experience and deep professional expertise, our team delivers precise, personal service — from inception through closing.",
+      "With decades of experience and deep professional expertise, our team delivers precise, personal service - from inception through closing.",
     ],
   },
 } as const;
