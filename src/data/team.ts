@@ -45,7 +45,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
       "לשכת עורכי הדין של מדינת ניו יורק, 2000",
     ],
     admissionEn: ["Israel Bar Association, 1996", "New York State Bar, 2000"],
-    photo: "/images/team1/oren.png",
+    photo: "/images/team1/oren.jpg",
   },
   {
     slug: "sara-david",
@@ -66,7 +66,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     educationEn: ["LL.B., Bar-Ilan University, 2019"],
     admissionHe: ["לשכת עורכי הדין בישראל, 2020"],
     admissionEn: ["Israel Bar Association, 2020"],
-    photo: "/images/team1/sarah.png",
+    photo: "/images/team1/sarah.jpg",
   },
   {
     slug: "yair-turgeman",
@@ -93,7 +93,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     ],
     admissionHe: ["לשכת עורכי הדין בישראל, 2019"],
     admissionEn: ["Israel Bar Association, 2019"],
-    photo: "/images/team1/yair.png",
+    photo: "/images/team1/yair.jpg",
   },
   {
     slug: "rebecca-salomon",
@@ -118,7 +118,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     ],
     admissionHe: ["לשכת עורכי הדין בישראל, 2019"],
     admissionEn: ["Israel Bar Association, 2019"],
-    photo: "/images/team1/rebecca.png",
+    photo: "/images/team1/rebecca.jpg",
   },
   {
     slug: "dana-lev-ran",
@@ -141,7 +141,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     ],
     admissionHe: ["לשכת עורכי הדין בישראל, 2024"],
     admissionEn: ["Israel Bar Association, 2024"],
-    photo: "/images/team1/dana.png",
+    photo: "/images/team1/dana.jpg",
   },
   {
     slug: "don-emil-rantisi",
@@ -162,7 +162,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     educationEn: ["LL.B., Ramat Gan Academic Center, 2023"],
     admissionHe: ["לשכת עורכי הדין בישראל, 2024"],
     admissionEn: ["Israel Bar Association, 2024"],
-    photo: "/images/team1/don.png",
+    photo: "/images/team1/don.jpg",
   },
   {
     slug: "tomer-lax",
@@ -189,6 +189,6 @@ export const TEAM_MEMBERS: TeamMember[] = [
     ],
     admissionHe: ["לשכת עורכי הדין בישראל, 2022"],
     admissionEn: ["Israel Bar Association, 2022"],
-    photo: "/images/team1/tomer.png",
+    photo: "/images/team1/tomer.jpg",
   },
 ];
