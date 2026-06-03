@@ -100,7 +100,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     slug: "rebecca-salomon",
-    email: "Rebecca@sl-adv.co.il",
+    email: "Rebecca@shenkarlaw.co.il",
     titleHe: "עורכת דין",
     titleEn: "Attorney",
     nameHe: "עו״ד רבקה סלומון",
@@ -126,7 +126,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     slug: "dana-lev-ran",
-    email: "Dana@sl-adv.co.il",
+    email: "Dana@shenkarlaw.co.il",
     titleHe: "עורכת דין",
     titleEn: "Attorney",
     nameHe: "עו״ד דנה לב-רן",
