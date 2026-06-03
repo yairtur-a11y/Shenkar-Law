@@ -99,6 +99,56 @@ export const TEAM_MEMBERS: TeamMember[] = [
       "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&q=80",
   },
   {
+    slug: "rebecca-salomon",
+    email: "Rebecca@sl-adv.co.il",
+    titleHe: "עורכת דין",
+    titleEn: "Attorney",
+    nameHe: "עו״ד רבקה סלומון",
+    nameEn: "Adv. Rebecca Salomon",
+    bioHe: [
+      "עו״ד רבקה סלומון השלימה את לימודי המשפטים בברזיל ועלתה לישראל לאחר שהשתתפה בתוכנית ״מסע״ של חילופי סטודנטים. רבקה דוברת פורטוגזית ואנגלית ומתמחה בעיקר בפעילות בינלאומית בתחום המשפט המסחרי ובעסקאות הון סיכון.",
+    ],
+    bioEn: [
+      "Adv. Rebecca Salomon completed her legal studies in Brazil and immigrated to Israel after participating in the Masa student exchange program. Rebecca speaks Portuguese and English, and focuses primarily on international activity in the fields of commercial law and venture capital transactions.",
+    ],
+    educationHe: [
+      "תואר ראשון במשפטים (LL.B), אוניברסיטת פורטלזה, 2010.",
+      "תואר שני במדע המדינה (M.A), אוניברסיטת תל אביב, 2014.",
+    ],
+    educationEn: [
+      "LL.B., University of Fortaleza, 2010.",
+      "M.A. in Political Science, Tel Aviv University, 2014.",
+    ],
+    admissionHe: ["לשכת עורכי הדין בישראל, 2019"],
+    admissionEn: ["Israel Bar Association, 2019"],
+    photo:
+      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80",
+  },
+  {
+    slug: "dana-lev-ran",
+    email: "Dana@sl-adv.co.il",
+    titleHe: "עורכת דין",
+    titleEn: "Attorney",
+    nameHe: "עו״ד דנה לב-רן",
+    nameEn: "Adv. Dana Lev-Ran",
+    bioHe: [
+      "עו״ד דנה לב-רן עוסקת במשפט מסחרי, דיני תאגידים, מיזוגים ורכישות ועסקאות בינלאומיות. דנה הצטרפה אלינו לאחר התמחות במשרד בוטיק מוביל בתחום הליטיגציה.",
+    ],
+    bioEn: [
+      "Adv. Dana Lev-Ran practices commercial law, corporate law, mergers and acquisitions, and international transactions. Dana joined us after completing her internship at a leading boutique litigation firm.",
+    ],
+    educationHe: [
+      "תואר ראשון במשפטים (LL.B), המכללה למינהל, 2023 (בהצטיינות).",
+    ],
+    educationEn: [
+      "LL.B., The College of Management Academic Studies, 2023 (with honors).",
+    ],
+    admissionHe: ["לשכת עורכי הדין בישראל, 2024"],
+    admissionEn: ["Israel Bar Association, 2024"],
+    photo:
+      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600&q=80",
+  },
+  {
     slug: "don-emil-rantisi",
     email: "Don@shenkarlaw.co.il",
     titleHe: "עורך דין",
