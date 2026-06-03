@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { TEAM_MEMBERS } from "@/data/team";
 import { UI, type Lang } from "@/data/content";
@@ -43,13 +42,10 @@ export default function ProfilePage({ lang, slug }: { lang: Lang; slug: string }
         <div className="mt-10 grid gap-12 lg:grid-cols-[360px_1fr]">
           <div className="lawyer-placeholder relative aspect-[3/4] overflow-hidden bg-rule">
             {member.photo ? (
-              <Image
+              <img
                 src={member.photo}
                 alt={name}
-                fill
-                sizes="(max-width: 1024px) 100vw, 360px"
-                className="object-cover"
-                priority
+                className="h-full w-full object-cover"
               />
             ) : (
               <span>{initials(name)}</span>
@@ -81,6 +77,7 @@ export default function ProfilePage({ lang, slug }: { lang: Lang; slug: string }
                 <h2 className="mb-4 font-display text-3xl font-normal text-ivory">
                   {lang === "he" ? "השכלה" : "Education"}
                 </h2>
+
                 <ul className="m-0 space-y-3 p-0 text-sm leading-7 text-stone">
                   {education.map((x) => (
                     <li
@@ -100,6 +97,7 @@ export default function ProfilePage({ lang, slug }: { lang: Lang; slug: string }
                 <h2 className="mb-4 font-display text-3xl font-normal text-ivory">
                   {lang === "he" ? "הסמכה" : "Admissions"}
                 </h2>
+
                 <ul className="m-0 space-y-3 p-0 text-sm leading-7 text-stone">
                   {admission.map((x) => (
                     <li
