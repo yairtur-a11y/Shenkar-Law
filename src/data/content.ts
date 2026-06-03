@@ -3,7 +3,7 @@ export type Lang = "he" | "en";
 export const SITE = {
   domain: "https://shenkar-law.co.il",
   email: "Office@shenkarlaw.co.il",
-  phone: "[מספר טלפון]",
+  phone: "03-7408000",
   addressHe: "דרך מנחם בגין 11, רמת גן, מגדל רוגובין תדהר, קומה 12",
   addressEn: "11 Menachem Begin Road, Rogovin Tidhar Tower, 12th Floor, Ramat Gan",
 };
