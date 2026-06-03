@@ -45,8 +45,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
       "לשכת עורכי הדין של מדינת ניו יורק, 2000",
     ],
     admissionEn: ["Israel Bar Association, 1996", "New York State Bar, 2000"],
-    photo:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80",
+    photo: "/images/team/oren.jpg",
   },
   {
     slug: "sara-david",
@@ -67,8 +66,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     educationEn: ["LL.B., Bar-Ilan University, 2019"],
     admissionHe: ["לשכת עורכי הדין בישראל, 2020"],
     admissionEn: ["Israel Bar Association, 2020"],
-    photo:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80",
+    photo: "/images/team/sara.jpg",
   },
   {
     slug: "yair-turgeman",
@@ -95,12 +93,11 @@ export const TEAM_MEMBERS: TeamMember[] = [
     ],
     admissionHe: ["לשכת עורכי הדין בישראל, 2019"],
     admissionEn: ["Israel Bar Association, 2019"],
-    photo:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&q=80",
+    photo: "/images/team/yair.jpg",
   },
   {
     slug: "rebecca-salomon",
-    email: "Rebecca@shenkarlaw.co.il",
+    email: "Rebecca@sl-adv.co.il",
     titleHe: "עורכת דין",
     titleEn: "Attorney",
     nameHe: "עו״ד רבקה סלומון",
@@ -121,12 +118,11 @@ export const TEAM_MEMBERS: TeamMember[] = [
     ],
     admissionHe: ["לשכת עורכי הדין בישראל, 2019"],
     admissionEn: ["Israel Bar Association, 2019"],
-    photo:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80",
+    photo: "/images/team/rebecca.jpg",
   },
   {
     slug: "dana-lev-ran",
-    email: "Dana@shenkarlaw.co.il",
+    email: "Dana@sl-adv.co.il",
     titleHe: "עורכת דין",
     titleEn: "Attorney",
     nameHe: "עו״ד דנה לב-רן",
@@ -145,8 +141,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     ],
     admissionHe: ["לשכת עורכי הדין בישראל, 2024"],
     admissionEn: ["Israel Bar Association, 2024"],
-    photo:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600&q=80",
+    photo: "/images/team/dana.jpg",
   },
   {
     slug: "don-emil-rantisi",
@@ -167,8 +162,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     educationEn: ["LL.B., Ramat Gan Academic Center, 2023"],
     admissionHe: ["לשכת עורכי הדין בישראל, 2024"],
     admissionEn: ["Israel Bar Association, 2024"],
-    photo:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80",
+    photo: "/images/team/don.jpg",
   },
   {
     slug: "tomer-lax",
@@ -195,7 +189,6 @@ export const TEAM_MEMBERS: TeamMember[] = [
     ],
     admissionHe: ["לשכת עורכי הדין בישראל, 2022"],
     admissionEn: ["Israel Bar Association, 2022"],
-    photo:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&q=80",
+    photo: "/images/team/tomer.jpg",
   },
 ];
