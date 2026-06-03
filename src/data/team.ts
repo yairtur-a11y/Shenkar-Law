@@ -93,7 +93,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     ],
     admissionHe: ["לשכת עורכי הדין בישראל, 2019"],
     admissionEn: ["Israel Bar Association, 2019"],
-    photo: "/images/team1/yair.jpg",
+    photo: "/images/team1/yair2.jpg",
   },
   {
     slug: "rebecca-salomon",
