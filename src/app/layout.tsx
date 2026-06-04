@@ -25,9 +25,9 @@ export const metadata: Metadata = {
   description:
     "Boutique law firm specializing in corporate law, M&A, venture capital and international business law.",
   icons: {
-    icon: "/new-logo.png",
-    shortcut: "/new-logo.png",
-    apple: "/new-logo.png",
+    icon: "/new-logo-2.png",
+    shortcut: "/new-logo-2.png",
+    apple: "/new-logo-2.png",
   },
   openGraph: {
     title: "Shenkar & Co. Law Offices",
