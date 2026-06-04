@@ -7,7 +7,7 @@ import { localized } from "@/lib/routes";
 type NavItem = { label: string; href: string };
 
 const navLinkClass =
-  "nav-link text-[15px] font-semibold tracking-[0.11em] text-ivory/95 hover:text-gold";
+  "nav-link flex h-[76px] items-center text-[15px] font-semibold leading-none tracking-[0.11em] text-ivory/95 hover:text-gold";
 
 const dropdownLinkClass =
   "nav-dropdown-link text-[16px] font-medium text-ivory/90 hover:text-gold";
@@ -22,10 +22,10 @@ function Dropdown({
   items: NavItem[];
 }) {
   return (
-    <div className="nav-dropdown">
-      <Link href={href} className={`${navLinkClass} inline-flex items-center gap-1.5`}>
+    <div className="nav-dropdown flex h-[76px] items-center">
+      <Link href={href} className={`${navLinkClass} gap-1.5`}>
         {label}
-        <span className="text-[11px] opacity-75" aria-hidden>
+        <span className="text-[11px] leading-none opacity-75" aria-hidden>
           ▾
         </span>
       </Link>
@@ -60,12 +60,27 @@ export default function Header({ lang }: { lang: Lang }) {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-navy/90 backdrop-blur-md">
       <div className="mx-auto flex h-[76px] w-[min(92%,1240px)] items-center justify-between gap-6">
-        <Link href={lang === "he" ? "/" : "/en"} className="flex items-center gap-3 no-underline">
-          <Image src="/new-logo.png" alt="Shenkar & Co." width={56} height={39} priority />
-          <span className="font-display text-[23px] font-semibold text-ivory">{ui.firm}</span>
+        <Link
+          href={lang === "he" ? "/" : "/en"}
+          className="flex h-[76px] items-center gap-4 no-underline"
+        >
+          <div className="flex h-[46px] w-[74px] items-center justify-center rounded-sm border border-gold/30 bg-white px-2 py-1 shadow-[0_0_18px_rgba(184,150,90,0.16)]">
+            <Image
+              src="/new-logo.png"
+              alt="Shenkar & Co."
+              width={120}
+              height={70}
+              priority
+              className="h-full w-full object-contain"
+            />
+          </div>
+
+          <span className="font-display text-[24px] font-semibold leading-none text-ivory">
+            {ui.firm}
+          </span>
         </Link>
 
-        <nav className="hidden items-center gap-9 md:flex" aria-label={ui.navigate}>
+        <nav className="hidden h-[76px] items-center gap-9 md:flex" aria-label={ui.navigate}>
           <Dropdown label={practiceLabel} href={localized("/practice-areas", lang)} items={practiceItems} />
           <Dropdown label={teamLabel} href={localized("/team", lang)} items={teamItems} />
 
@@ -78,7 +93,7 @@ export default function Header({ lang }: { lang: Lang }) {
             ))}
         </nav>
 
-        <div className="flex items-center gap-4">
+        <div className="flex h-[76px] items-center gap-4">
           <Link className={navLinkClass} href={ui.switchHref}>
             {ui.switchLabel}
           </Link>
@@ -91,7 +106,11 @@ export default function Header({ lang }: { lang: Lang }) {
             <nav className="absolute end-0 mt-5 max-h-[75vh] min-w-72 overflow-auto border border-rule bg-panel p-5 shadow-2xl">
               <div className="flex flex-col gap-5">
                 {ui.nav.map((item) => (
-                  <Link key={item.href} href={item.href} className="text-[17px] font-semibold text-ivory no-underline hover:text-gold">
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="text-[17px] font-semibold text-ivory no-underline hover:text-gold"
+                  >
                     {item.label}
                   </Link>
                 ))}
@@ -102,7 +121,11 @@ export default function Header({ lang }: { lang: Lang }) {
                   </p>
                   <div className="flex flex-col gap-3">
                     {practiceItems.map((item) => (
-                      <Link key={item.href} href={item.href} className="text-[15px] font-medium text-stone no-underline hover:text-ivory">
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        className="text-[15px] font-medium text-stone no-underline hover:text-ivory"
+                      >
                         {item.label}
                       </Link>
                     ))}
@@ -115,7 +138,11 @@ export default function Header({ lang }: { lang: Lang }) {
                   </p>
                   <div className="flex flex-col gap-3">
                     {teamItems.map((item) => (
-                      <Link key={item.href} href={item.href} className="text-[15px] font-medium text-stone no-underline hover:text-ivory">
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        className="text-[15px] font-medium text-stone no-underline hover:text-ivory"
+                      >
                         {item.label}
                       </Link>
                     ))}
