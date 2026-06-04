@@ -25,7 +25,7 @@ function Dropdown({
     <div className="nav-dropdown flex h-[76px] items-center">
       <Link href={href} className={`${navLinkClass} gap-1.5`}>
         {label}
-        <span className="text-[11px] leading-none opacity-75" aria-hidden>
+        <span className="flex items-center text-[11px] leading-none opacity-75" aria-hidden>
           ▾
         </span>
       </Link>
@@ -59,25 +59,22 @@ export default function Header({ lang }: { lang: Lang }) {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-navy/90 backdrop-blur-md">
-      <div className="mx-auto flex h-[76px] w-[min(92%,1240px)] items-center justify-between gap-6">
+      <div className="mx-auto flex h-[76px] w-[min(92%,1240px)] items-center justify-between gap-8">
         <Link
           href={lang === "he" ? "/" : "/en"}
-          className="flex h-[76px] items-center gap-4 no-underline"
+          className="flex h-[76px] shrink-0 items-center no-underline"
+          aria-label="Shenkar & Co. Law Offices"
         >
-          <div className="flex h-[46px] w-[74px] items-center justify-center rounded-sm border border-gold/30 bg-white px-2 py-1 shadow-[0_0_18px_rgba(184,150,90,0.16)]">
+          <div className="relative h-[58px] w-[240px]">
             <Image
-              src="/new-logo.png"
-              alt="Shenkar & Co."
-              width={120}
-              height={70}
+              src="/new-logo-2.png"
+              alt="Shenkar & Co. Law Offices"
+              fill
               priority
-              className="h-full w-full object-contain"
+              sizes="240px"
+              className="object-contain drop-shadow-[0_0_10px_rgba(184,150,90,0.22)]"
             />
           </div>
-
-          <span className="font-display text-[24px] font-semibold leading-none text-ivory">
-            {ui.firm}
-          </span>
         </Link>
 
         <nav className="hidden h-[76px] items-center gap-9 md:flex" aria-label={ui.navigate}>
