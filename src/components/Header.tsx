@@ -7,7 +7,7 @@ import { localized } from "@/lib/routes";
 type NavItem = { label: string; href: string };
 
 const navLinkClass =
-  "nav-link flex h-[76px] items-center text-[15px] font-semibold leading-none tracking-[0.11em] text-ivory/95 hover:text-gold";
+  "nav-link inline-flex h-[76px] items-center whitespace-nowrap text-[15px] font-semibold leading-none tracking-[0.11em] text-ivory/95 transition-colors hover:text-gold";
 
 const dropdownLinkClass =
   "nav-dropdown-link text-[16px] font-medium text-ivory/90 hover:text-gold";
@@ -22,7 +22,7 @@ function Dropdown({
   items: NavItem[];
 }) {
   return (
-    <div className="nav-dropdown flex h-[76px] items-center">
+    <div className="nav-dropdown relative flex h-[76px] items-center">
       <Link href={href} className={`${navLinkClass} gap-1.5`}>
         {label}
         <span className="flex items-center text-[11px] leading-none opacity-75" aria-hidden>
@@ -56,30 +56,44 @@ export default function Header({ lang }: { lang: Lang }) {
 
   const practiceLabel = lang === "he" ? "תחומי עיסוק" : "Practice Areas";
   const teamLabel = lang === "he" ? "צוות" : "Team";
+  const brandText = lang === "he" ? "שנקר ושות׳" : "Shenkar & Co.";
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-navy/90 backdrop-blur-md">
       <div className="mx-auto flex h-[76px] w-[min(92%,1240px)] items-center justify-between gap-8">
         <Link
           href={lang === "he" ? "/" : "/en"}
-          className="flex h-[76px] shrink-0 items-center no-underline"
+          className="flex h-[76px] shrink-0 items-center gap-4 no-underline"
+          dir="ltr"
           aria-label="Shenkar & Co. Law Offices"
         >
-          <div className="relative h-[58px] w-[240px]">
+          <div className="relative h-[38px] w-[156px] shrink-0">
             <Image
-              src="/new-logo-2.png"
+              src="/shenkar-logo-header.svg"
               alt="Shenkar & Co. Law Offices"
               fill
               priority
-              sizes="240px"
-              className="object-contain drop-shadow-[0_0_10px_rgba(184,150,90,0.22)]"
+              sizes="156px"
+              className="object-contain"
             />
           </div>
+
+          <span className="font-display text-[23px] font-medium leading-none tracking-[0.015em] text-ivory/82">
+            {brandText}
+          </span>
         </Link>
 
         <nav className="hidden h-[76px] items-center gap-9 md:flex" aria-label={ui.navigate}>
-          <Dropdown label={practiceLabel} href={localized("/practice-areas", lang)} items={practiceItems} />
-          <Dropdown label={teamLabel} href={localized("/team", lang)} items={teamItems} />
+          <Dropdown
+            label={practiceLabel}
+            href={localized("/practice-areas", lang)}
+            items={practiceItems}
+          />
+          <Dropdown
+            label={teamLabel}
+            href={localized("/team", lang)}
+            items={teamItems}
+          />
 
           {ui.nav
             .filter((item) => item.label !== practiceLabel && item.label !== teamLabel)
@@ -96,7 +110,10 @@ export default function Header({ lang }: { lang: Lang }) {
           </Link>
 
           <details className="relative md:hidden">
-            <summary className="cursor-pointer list-none text-3xl font-semibold text-ivory" aria-label="Menu">
+            <summary
+              className="cursor-pointer list-none text-3xl font-semibold text-ivory"
+              aria-label="Menu"
+            >
               ☰
             </summary>
 
