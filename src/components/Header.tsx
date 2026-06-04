@@ -61,7 +61,7 @@ export default function Header({ lang }: { lang: Lang }) {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-navy/90 backdrop-blur-md">
       <div className="mx-auto flex h-[76px] w-[min(92%,1240px)] items-center justify-between gap-6">
         <Link href={lang === "he" ? "/" : "/en"} className="flex items-center gap-3 no-underline">
-          <Image src="/shenkar-logo.png" alt="Shenkar & Co." width={56} height={39} priority />
+          <Image src="/new-logo.png" alt="Shenkar & Co." width={56} height={39} priority />
           <span className="font-display text-[23px] font-semibold text-ivory">{ui.firm}</span>
         </Link>
 

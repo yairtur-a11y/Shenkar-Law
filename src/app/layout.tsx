@@ -18,17 +18,22 @@ const body = Noto_Sans_Hebrew({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://shenkar-law.co.il"),
-  title: { default: "שנקר ושות׳ | Shenkar & Co.", template: "%s — Shenkar & Co." },
-  description: "Boutique law firm specializing in corporate law, M&A, venture capital and international business law.",
+  title: {
+    default: "שנקר ושות׳ | Shenkar & Co.",
+    template: "%s — Shenkar & Co.",
+  },
+  description:
+    "Boutique law firm specializing in corporate law, M&A, venture capital and international business law.",
   icons: {
-  icon: "/shenkar-logo.png",
-  shortcut: "/shenkar-logo.png",
-  apple: "/shenkar-logo.png",
-},
+    icon: "/new-logo.png",
+    shortcut: "/new-logo.png",
+    apple: "/new-logo.png",
+  },
   openGraph: {
     title: "Shenkar & Co. Law Offices",
-    description: "Boutique law firm specializing in corporate law, M&A and international business law.",
-    images: ["/hero-bg.jpg"],
+    description:
+      "Boutique law firm specializing in corporate law, M&A and international business law.",
+    images: ["/reka.png"],
   },
 };
 
