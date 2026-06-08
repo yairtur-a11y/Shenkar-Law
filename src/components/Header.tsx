@@ -55,30 +55,32 @@ export default function Header({ lang }: { lang: Lang }) {
 
   const practiceLabel = lang === "he" ? "תחומי עיסוק" : "Practice Areas";
   const teamLabel = lang === "he" ? "צוות" : "Team";
+  const brandText = lang === "he" ? "שנקר ושות׳" : "Shenkar & Co.";
+
+  const brandPositionClass = lang === "he" ? "absolute right-[-18px]" : "absolute left-[-18px]";
+
+  const brandTypographyClass =
+    lang === "he"
+      ? "text-[23px] font-semibold tracking-[0.01em]"
+      : "text-[25px] font-semibold tracking-[0.045em]";
 
   return (
-    <header
-      className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-navy/90 backdrop-blur-md"
-      dir={lang === "he" ? "rtl" : "ltr"}
-    >
-      <div className="mx-auto flex h-[76px] w-[min(96%,1500px)] items-center gap-10">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-navy/90 backdrop-blur-md">
+      <div className="relative mx-auto flex h-[76px] w-[min(96%,1500px)] items-center">
         <Link
           href={lang === "he" ? "/" : "/en"}
-          className="flex h-[76px] shrink-0 items-center no-underline"
-          dir="ltr"
+          className={`${brandPositionClass} inline-flex h-[76px] items-center whitespace-nowrap leading-none text-ivory/90 no-underline transition-colors hover:text-gold ${brandTypographyClass}`}
+          style={lang === "he" ? { fontFamily: "'Assistant', Arial, sans-serif" } : undefined}
           aria-label="Shenkar & Co. Law Firm"
         >
-          <div className="flex flex-col items-start leading-none">
-            <span className="font-display text-[25px] font-semibold tracking-[0.08em] text-ivory">
-              SHENKAR &amp; CO.
-            </span>
-            <span className="mt-2 text-[10px] font-semibold tracking-[0.34em] text-gold/90">
-              LAW FIRM
-            </span>
-          </div>
+          {brandText}
         </Link>
 
-        <nav className="hidden h-[76px] items-center gap-9 md:flex" aria-label={ui.navigate}>
+        <nav
+          className="absolute left-1/2 hidden h-[76px] -translate-x-1/2 items-center gap-9 md:flex"
+          aria-label={ui.navigate}
+          dir={lang === "he" ? "rtl" : "ltr"}
+        >
           <Dropdown
             label={practiceLabel}
             href={localized("/practice-areas", lang)}
@@ -100,7 +102,7 @@ export default function Header({ lang }: { lang: Lang }) {
             ))}
         </nav>
 
-        <div className="ms-auto flex h-[76px] items-center gap-4">
+        <div className={`${lang === "he" ? "mr-auto" : "ml-auto"} flex h-[76px] items-center gap-4`}>
           <Link className={navLinkClass} href={ui.switchHref}>
             {ui.switchLabel}
           </Link>
@@ -113,7 +115,10 @@ export default function Header({ lang }: { lang: Lang }) {
               ☰
             </summary>
 
-            <nav className="absolute end-0 mt-5 max-h-[75vh] min-w-72 overflow-auto border border-rule bg-panel p-5 shadow-2xl">
+            <nav
+              className="absolute end-0 mt-5 max-h-[75vh] min-w-72 overflow-auto border border-rule bg-panel p-5 shadow-2xl"
+              dir={lang === "he" ? "rtl" : "ltr"}
+            >
               <div className="flex flex-col gap-5">
                 {ui.nav.map((item) => (
                   <Link
