@@ -87,13 +87,13 @@ export const PRACTICE_AREAS = {
         num: "03",
         slug: "international-transactions",
         name: "עסקאות בינלאומיות",
-        desc: "תחום העסקאות הבינלאומיות במשרדנו מתמקד בליווי לקוחות בפעילות חוצת־גבולות, הכוללת עסקאות מורכבות מול גורמים זרים, רגולציה בינלאומית, והשקעות בחו\"ל ובישראל. אנו מייצגים חברות, קרנות השקעה, יזמים ומשקיעים בעסקאות מסחריות בינלאומיות, חוזי שיתוף פעולה, הפצה, רכישות ומכירות בשוק הגלובלי, תוך עבודה שוטפת מול משרדי עורכי דין זרים וגורמים מוסדיים בינלאומיים. עבודתנו משלבת הבנה עסקית של שווקים שונים יחד עם ידע משפטי רחב בתחומי דיני חוזים, תאגידים ורגולציה בינלאומית.",
+        desc: "תחום העסקאות הבינלאומיות במשרדנו מתמקד בליווי לקוחות בפעילות חוצת-גבולות, הכוללת עסקאות מורכבות מול גורמים זרים, רגולציה בינלאומית, והשקעות בחו\"ל ובישראל. אנו מייצגים חברות, קרנות השקעה, יזמים ומשקיעים בעסקאות מסחריות בינלאומיות, חוזי שיתוף פעולה, הפצה, רכישות ומכירות בשוק הגלובלי, תוך עבודה שוטפת מול משרדי עורכי דין זרים וגורמים מוסדיים בינלאומיים. עבודתנו משלבת הבנה עסקית של שווקים שונים יחד עם ידע משפטי רחב בתחומי דיני חוזים, תאגידים ורגולציה בינלאומית.",
       },
       {
         num: "04",
         slug: "commercial-ongoing-counsel",
         name: "מסחרי וליווי שוטף",
-        desc: "תחום זה עוסק במתן ייעוץ משפטי שוטף לחברות, תוך ליווי פעיל של כל ההיבטים העסקיים והחוזיים של פעילותן. אנו מסייעים לחברות בניהול חוזים, הסכמי ספקים ולקוחות, ניהול סיכונים, עסקאות מסחריות, רגולציה ותפעול שוטף, וכן בהכוונה אסטרטגית בנושאי מבנה התאגיד וממשל תאגידי.",
+        desc: "תחום זה עוסק במתן ייעוץ משפטי שוטף לחברות, תוך ליווי פעיל של כל ההיבטים העסקיים והחוזיים של פעילותן. אנו מסייעים לחברות בניהול חוזים, הסכמי ספקים, לקוחות, רישיונות, ניהול סיכונים, עסקאות מסחריות, רגולציה ותפעול שוטף, וכן בהכוונה אסטרטגית בנושאי מבנה התאגיד וממשל תאגידי.",
       },
       {
         num: "05",
@@ -174,25 +174,28 @@ export const ABOUT = {
 
 export const TICKER = {
   he: [
-    "ליווי עסקת מיזוג ורכישה בתחום הטכנולוגיה",
-    "ייצוג קרן השקעות בעסקת רכישה אסטרטגית",
-    "ליווי סבב השקעה לחברת היי־טק ישראלית",
-    "ייעוץ משפטי בעסקת נדל״ן מסחרי",
-    "ייצוג חברה בינלאומית בפעילותה בישראל",
-    "ליווי מיזם משותף חוצה־גבולות",
-    "ייעוץ שוטף לחברות בצמיחה",
-    "ליווי עסקת מימון והשקעה מורכבת",
+    "ייצוג גב' מרים נפך מוזס במכירת כלל אחזקותיה בידיעות אחרונות לנוני מוזס",
+    "ייצוג אלטשולר שחם בעסקת רכישת מניות בלידר שוקי הון מבעלת השליטה בחברה",
+    "ייצוג אלטשולר שחם פיננסים ברכישת חברת קרדיטים למתן אשראי לעסקים",
+    "ייצוג חברת פלסטניר בע״מ במכירת פעילותה העסקית לחברת פלטופיל הזורע בע״מ, חברה ציבורית",
+    "ייצוג חברת Care שירותי רפואה במכירת חלק ממניותיה לחברת ההשקעות של מזרחי טפחות",
+    "ייצוג קרן ההון סיכון Entrée Capital בעסקאות השקעה רבות בחברות הייטק בישראל ובארה״ב",
+    "ייצוג אלטשולר שחם בהקמת iFunds Capital, פלטפורמה להשקעות אלטרנטיביות למשקיעים כשירים",
+    "ייצוג שוטף של חברת הפרסום גיתם BBDO וחברות הקבוצה במגוון עסקאות בישראל ובחו״ל",
+    "ייצוג שגרירויות אירופאיות, לרבות האיחוד האירופי, במגוון נושאים הקשורים לפעילותן בישראל",
   ],
   en: [
-    "Advising on a technology M&A transaction",
-    "Representing an investment fund in a strategic acquisition",
-    "Counseling an Israeli high-tech company on a financing round",
-    "Legal support for a commercial real estate transaction",
-    "Representing an international company in Israel",
-    "Advising on a cross-border joint venture",
-    "Ongoing counsel to growth companies",
-    "Supporting a complex financing and investment transaction",
+    "Representation of Ms. Miriam Nofech-Mozes in the sale of all of her holdings in Yedioth Ahronoth to Noni Mozes",
+    "Representation of Altshuler Shaham in the acquisition of shares in Leader Capital Markets from the company’s controlling shareholder",
+    "Representation of Altshuler Shaham Finance in the acquisition of Credits, a business credit company",
+    "Representation of Plastnir Ltd. in the sale of its business operations to Platofil Hazorea Ltd., a public company",
+    "Representation of Care Medical Services in the sale of part of its shares to Mizrahi Tefahot’s investment arm",
+    "Representation of Entrée Capital in numerous investment transactions in high-tech companies in Israel and the United States",
+    "Representation of Altshuler Shaham in the establishment of iFunds Capital, an alternative investments platform for qualified investors",
+    "Ongoing representation of Gitam BBDO and its group companies in a wide range of transactions in Israel and abroad",
+    "Representation of European embassies, including the European Union, in various matters relating to their activities in Israel",
   ],
+};
 } as const;
 
 export const ACCESSIBILITY = {
