@@ -32,7 +32,7 @@ export default function Ticker({ lang }: { lang: Lang }) {
         style={{
           transform: isHebrew ? "translateX(-50%)" : "translateX(0)",
           animationName,
-          animationDuration: "56s",
+          animationDuration: "64s",
           animationTimingFunction: "linear",
           animationIterationCount: "infinite",
           animationDelay: "1.5s",
