@@ -4,7 +4,7 @@ export const SITE = {
   domain: "https://shenkarlaw.co.il",
   email: "Office@shenkarlaw.co.il",
   phone: "03-7408000",
-  Fax: 03-5474940;
+  fax: "03-5474940",
   addressHe: "מגדל רוגובין תדהר, קומה 12, דרך מנחם בגין 11, רמת גן, 5268104",
   addressEn: "Rogovin Tidhar Tower, 11 Menachem Begin Rd. (12th floor), Ramat Gan 5268104",
 };
