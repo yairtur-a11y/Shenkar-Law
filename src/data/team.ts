@@ -28,16 +28,16 @@ export const TEAM_MEMBERS: TeamMember[] = [
       "בין השנים 1999–2003 עבד אורן בפירמת Sullivan & Cromwell בניו יורק, המדורגת כאחת משלוש פירמות עורכי הדין היוקרתיות ביותר בארה״ב, שם היה מעורב בליווי עסקאות מיזוגים ורכישות בשווי מיליארדי דולרים.",
     ],
     bioEn: [
-      "Adv. Oren Shenkar advises leading corporations and senior executives on complex transactions across a range of fields, both in Israel and abroad, with an emphasis on mergers and acquisitions.",
-      "In addition to advising on corporate and capital markets law and representing venture capital funds and startups in investment and fundraising transactions, Oren is regarded as a pioneer and a leading attorney in Israel's medical cannabis sector, and has taken an active part in establishing joint ventures in several countries where activity in this field has been approved.",
-      "Between 1999 and 2003, Oren worked at Sullivan & Cromwell in New York - ranked among the three most prestigious law firms in the United States - where he was involved in mergers and acquisitions worth billions of dollars.",
+      "Adv. Oren Shenkar advises leading corporations and senior executives on complex transactions across a wide range of sectors, in Israel and internationally, with a particular focus on mergers and acquisitions.",
+      "In addition to advising on corporate and capital markets matters and representing venture capital funds and startups in investment and fundraising transactions, Oren is regarded as a pioneer and leading attorney in Israel’s medical cannabis sector, and has played an active role in establishing joint ventures in several countries where activity in this field has been approved.",
+      "Between 1999 and 2003, Oren worked at Sullivan & Cromwell in New York, one of the most prestigious law firms in the United States, where he was involved in mergers and acquisitions worth billions of dollars.",
     ],
     educationHe: [
       "תואר ראשון במשפטים (LL.B.), האוניברסיטה העברית, 1995 (בהצטיינות).",
       "תואר שני במשפטים (LL.M.), אוניברסיטת קולומביה, 1999 (בהצטיינות יתרה) - זוכה פרס ע״ש וולטר גלהורן, המוענק לסטודנט שמסיים את התואר הראשון במחזור.",
     ],
     educationEn: [
-      "LL.B., The Hebrew University, 1995 (cum laude).",
+      "LL.B., The Hebrew University of Jerusalem, 1995 (cum laude).",
       "LL.M., Columbia University, 1999 (with highest honors) - recipient of the Walter Gellhorn Prize, awarded to the top graduating student of the class.",
     ],
     admissionHe: [
@@ -48,19 +48,19 @@ export const TEAM_MEMBERS: TeamMember[] = [
     photo: "/images/team1/oren.jpg",
   },
   {
-    slug: "sara-david",
-    email: "Sara@shenkarlaw.co.il",
+    slug: "sarah-david",
+    email: "Sarah@shenkarlaw.co.il",
     titleHe: "שותפה",
     titleEn: "Partner",
     nameHe: "עו״ד שרה דויד",
-    nameEn: "Adv. Sara David",
+    nameEn: "Adv. Sarah David",
     bioHe: [
       "עו״ד שרה דויד מלווה תאגידים ממגוון סקטורים עסקיים, בדגש על גיוסי הון, מיזוגים ורכישות ועסקאות מסחריות. בנוסף, שרה מעניקה ייעוץ שוטף ליזמים, משקיעים פרטיים ולתאגידים במגוון ההיבטים המשפטיים של פעילותם המקומית והבינלאומית, לרבות בהיבטי ממשל תאגידי, מימון ונושאים מסחריים אחרים.",
       "שרה הצטרפה למשרדנו לאחר שהתמחתה במחלקה למשפט בין-לאומי בייעוץ וחקיקה תחת המשנה ליועץ המשפטי לממשלה.",
     ],
     bioEn: [
-      "Adv. Sara David advises corporations across a variety of business sectors, with an emphasis on fundraising, mergers and acquisitions, and commercial transactions. Sara also provides ongoing counsel to entrepreneurs, private investors and corporations on the full range of legal aspects of their domestic and international activity, including corporate governance, financing and other commercial matters.",
-      "Sara joined our firm after interning in the International Law Department of the Counseling and Legislation Division, under the Deputy Attorney General.",
+      "Adv. Sarah David advises corporations across a variety of business sectors, with an emphasis on fundraising, mergers and acquisitions, and commercial transactions. Sarah also provides ongoing counsel to entrepreneurs, private investors and corporations on a broad range of legal matters relating to their domestic and international activity, including corporate governance, financing and other commercial matters.",
+      "Sarah joined our firm after completing her internship in the International Law Department of the Counseling and Legislation Division, under the Deputy Attorney General.",
     ],
     educationHe: ["תואר ראשון במשפטים (LL.B), אוניברסיטת בר-אילן, 2019"],
     educationEn: ["LL.B., Bar-Ilan University, 2019"],
@@ -80,8 +80,8 @@ export const TEAM_MEMBERS: TeamMember[] = [
       "יאיר הצטרף למשרדנו לאחר מספר שנים בהם עסק בליטיגציה אזרחית וייצג את המדינה וגופים מוסדיים מובילים במשק.",
     ],
     bioEn: [
-      "Adv. Yair Turgeman advises on acquisitions and mergers, venture capital investments and international ventures. Yair also provides ongoing counsel to corporations on the full range of legal aspects of their activity, including corporate governance, financing and other commercial matters.",
-      "Yair joined our firm after several years practicing civil litigation, during which he represented the State and leading institutional entities in the economy.",
+      "Adv. Yair Turgeman advises on mergers and acquisitions, venture capital investments and international ventures. Yair also provides ongoing counsel to corporations on a broad range of legal matters relating to their activity, including corporate governance, financing and other commercial matters.",
+      "Yair joined our firm after several years of practice in civil litigation, during which he represented the State of Israel and leading institutional clients.",
     ],
     educationHe: [
       "תואר ראשון במשפטים (LL.B), הקריה האקדמית אונו, 2015",
@@ -106,7 +106,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
       "עו״ד רבקה סלומון השלימה את לימודי המשפטים בברזיל ועלתה לישראל לאחר שהשתתפה בתוכנית ״מסע״ של חילופי סטודנטים. רבקה דוברת פורטוגזית ואנגלית ומתמחה בעיקר בפעילות בינלאומית בתחום המשפט המסחרי ובעסקאות הון סיכון.",
     ],
     bioEn: [
-      "Adv. Rebecca Salomon completed her legal studies in Brazil and immigrated to Israel after participating in the Masa student exchange program. Rebecca speaks Portuguese and English, and focuses primarily on international activity in the fields of commercial law and venture capital transactions.",
+      "Adv. Rebecca Salomon completed her legal studies in Brazil and immigrated to Israel after participating in the Masa student exchange program. Rebecca speaks Portuguese and English, and focuses primarily on international commercial activity and venture capital transactions.",
     ],
     educationHe: [
       "תואר ראשון במשפטים (LL.B), אוניברסיטת פורטלזה, 2010.",
@@ -160,7 +160,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     ],
     bioEn: [
       "Adv. Don Emil Rantisi practices commercial and corporate law, with a focus on mergers and acquisitions. Don provides comprehensive guidance and counsel to private clients and corporations, addressing the full range of legal aspects relating to their activity.",
-      "Don joined the firm's team of attorneys after completing his internship at our firm and successfully passing the bar examinations.",
+      "Don joined the firm’s team of attorneys after completing his internship at our firm and successfully passing the bar examinations.",
     ],
     educationHe: ["תואר ראשון במשפטים (LL.B), המרכז האקדמי רמת גן, 2023"],
     educationEn: ["LL.B., Ramat Gan Academic Center, 2023"],
@@ -179,7 +179,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
       "עו״ד דנה לב-רן עוסקת במשפט מסחרי, דיני תאגידים, מיזוגים ורכישות ועסקאות בינלאומיות. דנה הצטרפה אלינו לאחר התמחות במשרד בוטיק מוביל בתחום הליטיגציה.",
     ],
     bioEn: [
-      "Adv. Dana Lev-Ran practices commercial law, corporate law, mergers and acquisitions, and international transactions. Dana joined us after completing her internship at a leading boutique litigation firm.",
+      "Adv. Dana Lev-Ran practices commercial law, corporate law, mergers and acquisitions, and international transactions. Dana joined our firm after completing her internship at a leading boutique litigation firm.",
     ],
     educationHe: [
       "תואר ראשון במשפטים (LL.B), המכללה למינהל, 2023 (בהצטיינות).",
