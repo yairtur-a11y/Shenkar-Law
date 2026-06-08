@@ -69,7 +69,7 @@ export default function Header({ lang }: { lang: Lang }) {
         >
           <div className="relative h-[38px] w-[156px] shrink-0">
             <Image
-              src="/new-logo-3.svg"
+              src="/logo86.png"
               alt="Shenkar & Co. Law Offices"
               fill
               priority

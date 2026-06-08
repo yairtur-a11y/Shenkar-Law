@@ -22,13 +22,13 @@ export const metadata: Metadata = {
     default: "שנקר ושות׳ | Shenkar & Co.",
     template: "%s — Shenkar & Co.",
   },
-  description:
-    "Boutique law firm specializing in corporate law, M&A, venture capital and international business law.",
-  icons: {
-    icon: "/new-logo-2.png",
-    shortcut: "/new-logo-2.png",
-    apple: "/new-logo-2.png",
-  },
+description:
+  "Boutique law firm specializing in corporate law, M&A, venture capital and international business law.",
+icons: {
+  icon: "/logo86.png",
+  shortcut: "/logo86.png",
+  apple: "/logo86.png",
+},
   openGraph: {
     title: "Shenkar & Co. Law Offices",
     description:
