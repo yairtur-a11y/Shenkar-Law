@@ -195,7 +195,6 @@ export const TICKER = {
     "Ongoing representation of Gitam BBDO and its group companies in a wide range of transactions in Israel and abroad",
     "Representation of European embassies, including the European Union, in various matters relating to their activities in Israel",
   ],
-};
 } as const;
 
 export const ACCESSIBILITY = {
