@@ -30,7 +30,7 @@ icons: {
   apple: "/logo86.png",
 },
   openGraph: {
-    title: "Shenkar & Co. Law Offices",
+    title: "Shenkar & Co. Law Firm",
     description:
       "Boutique law firm specializing in corporate law, M&A and international business law.",
     images: ["/reka.png"],

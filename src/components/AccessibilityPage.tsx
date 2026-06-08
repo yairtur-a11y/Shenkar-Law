@@ -44,7 +44,7 @@ const CONTENT = {
     label: "Accessibility",
     title: "Accessibility Statement",
     intro:
-      "Shenkar & Co. Law Offices is committed to providing equal, respectful, professional and accessible service to all clients, including persons with disabilities. We strive to enable every person to obtain information about the firm, contact us and use this website in a clear, convenient and accessible manner.",
+      "Shenkar & Co. Law Firm is committed to providing equal, respectful, professional and accessible service to all clients, including persons with disabilities. We strive to enable every person to obtain information about the firm, contact us and use this website in a clear, convenient and accessible manner.",
     sections: [
       {
         heading: "Website Accessibility",

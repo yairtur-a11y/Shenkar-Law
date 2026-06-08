@@ -35,7 +35,7 @@ export const UI = {
     switchLabel: "HE",
     switchHref: "/",
     firm: "Shenkar & Co.",
-    descriptor: "Law Offices",
+    descriptor: "Law Firm",
     nav: [
       { label: "Practice Areas", href: "/en/practice-areas" },
       { label: "Team", href: "/en/team" },

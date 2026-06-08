@@ -1,4 +1,4 @@
-# Shenkar & Co. Law Offices — lightweight rebuild
+# Shenkar & Co. Law Firm — lightweight rebuild
 
 This is a simplified Next.js 14 App Router website for a bilingual boutique law firm.
 
