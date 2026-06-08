@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { UI, PRACTICE_AREAS, type Lang } from "@/data/content";
 import { TEAM_MEMBERS } from "@/data/team";
@@ -56,31 +55,27 @@ export default function Header({ lang }: { lang: Lang }) {
 
   const practiceLabel = lang === "he" ? "תחומי עיסוק" : "Practice Areas";
   const teamLabel = lang === "he" ? "צוות" : "Team";
-  const brandText = lang === "he" ? "שנקר ושות׳" : "Shenkar & Co.";
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-navy/90 backdrop-blur-md">
-      <div className="mx-auto flex h-[76px] w-[min(92%,1240px)] items-center justify-between gap-8">
+    <header
+      className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-navy/90 backdrop-blur-md"
+      dir={lang === "he" ? "rtl" : "ltr"}
+    >
+      <div className="mx-auto flex h-[76px] w-[min(96%,1500px)] items-center gap-10">
         <Link
           href={lang === "he" ? "/" : "/en"}
-          className="flex h-[76px] shrink-0 items-center gap-4 no-underline"
+          className="flex h-[76px] shrink-0 items-center no-underline"
           dir="ltr"
-          aria-label="Shenkar & Co. Law Offices"
+          aria-label="Shenkar & Co. Law Firm"
         >
-          <div className="relative h-[38px] w-[156px] shrink-0">
-            <Image
-              src="/logo86.png"
-              alt="Shenkar & Co. Law Offices"
-              fill
-              priority
-              sizes="156px"
-              className="object-contain"
-            />
+          <div className="flex flex-col items-start leading-none">
+            <span className="font-display text-[25px] font-semibold tracking-[0.08em] text-ivory">
+              SHENKAR &amp; CO.
+            </span>
+            <span className="mt-2 text-[10px] font-semibold tracking-[0.34em] text-gold/90">
+              LAW FIRM
+            </span>
           </div>
-
-          <span className="font-display text-[23px] font-medium leading-none tracking-[0.015em] text-ivory/82">
-            {brandText}
-          </span>
         </Link>
 
         <nav className="hidden h-[76px] items-center gap-9 md:flex" aria-label={ui.navigate}>
@@ -89,6 +84,7 @@ export default function Header({ lang }: { lang: Lang }) {
             href={localized("/practice-areas", lang)}
             items={practiceItems}
           />
+
           <Dropdown
             label={teamLabel}
             href={localized("/team", lang)}
@@ -104,7 +100,7 @@ export default function Header({ lang }: { lang: Lang }) {
             ))}
         </nav>
 
-        <div className="flex h-[76px] items-center gap-4">
+        <div className="ms-auto flex h-[76px] items-center gap-4">
           <Link className={navLinkClass} href={ui.switchHref}>
             {ui.switchLabel}
           </Link>
