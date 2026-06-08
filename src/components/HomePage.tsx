@@ -6,10 +6,10 @@ import Ticker from "@/components/Ticker";
 export default function HomePage({ lang }: { lang: Lang }) {
   return (
     <>
-      <div className="relative overflow-hidden pb-[150px]">
+      <div className="relative overflow-hidden">
         <Hero lang={lang} />
 
-        <div className="absolute inset-x-0 bottom-[96px] z-20">
+        <div className="absolute inset-x-0 top-[92vh] z-30">
           <Ticker lang={lang} />
         </div>
       </div>

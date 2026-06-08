@@ -1,17 +1,19 @@
-import { TICKER, UI, type Lang } from "@/data/content";
+import { TICKER, type Lang } from "@/data/content";
 
 export default function Ticker({ lang }: { lang: Lang }) {
-  const ui = UI[lang];
   const items = TICKER[lang];
+  const isHebrew = lang === "he";
 
-  const animationName = lang === "he" ? "tickerScrollHe" : "tickerScrollEn";
+  const animationName = isHebrew
+    ? "shenkarTickerScrollRight"
+    : "shenkarTickerScrollLeft";
 
   const renderItems = (prefix: string) =>
     items.map((item, i) => (
       <span
-        key={`${prefix}-${item}-${i}`}
+        key={`${prefix}-${i}`}
         className="inline-flex items-center"
-        dir={ui.dir}
+        dir={isHebrew ? "rtl" : "ltr"}
       >
         <span>{item}</span>
         <span className="mx-4 text-gold">·</span>
@@ -20,24 +22,28 @@ export default function Ticker({ lang }: { lang: Lang }) {
 
   return (
     <div
-      className="relative flex h-12 items-center overflow-hidden border-y border-white/10 bg-navy/18 text-[13px] uppercase tracking-[.12em] text-ivory/80 backdrop-blur-[3px]"
-      dir={ui.dir}
-      aria-label={lang === "he" ? "עסקאות נבחרות" : "Selected transactions"}
+      className="group relative flex h-12 items-center overflow-hidden border-y border-white/10 bg-navy/35 text-[13px] uppercase tracking-[.12em] text-ivory/85 backdrop-blur-[4px]"
+      dir="ltr"
+      aria-label={isHebrew ? "עסקאות נבחרות" : "Selected transactions"}
     >
       <div
-        className="flex w-max whitespace-nowrap"
+        className="flex w-max whitespace-nowrap group-hover:[animation-play-state:paused]"
         dir="ltr"
         style={{
+          transform: isHebrew ? "translateX(-50%)" : "translateX(0)",
           animationName,
-          animationDuration: "48.3s",
+          animationDuration: "56s",
           animationTimingFunction: "linear",
           animationIterationCount: "infinite",
-          animationDelay: "0s",
-          transform: "translateX(0)",
+          animationDelay: "1.5s",
+          animationFillMode: "both",
           willChange: "transform",
         }}
       >
-        <div className="flex shrink-0 whitespace-nowrap">{renderItems("first")}</div>
+        <div className="flex shrink-0 whitespace-nowrap">
+          {renderItems("first")}
+        </div>
+
         <div className="flex shrink-0 whitespace-nowrap" aria-hidden>
           {renderItems("second")}
         </div>
@@ -45,16 +51,16 @@ export default function Ticker({ lang }: { lang: Lang }) {
 
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-navy/35 to-transparent"
+        className="pointer-events-none absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-navy/45 to-transparent"
       />
 
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-navy/35 to-transparent"
+        className="pointer-events-none absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-navy/45 to-transparent"
       />
 
       <style>{`
-        @keyframes tickerScrollEn {
+        @keyframes shenkarTickerScrollLeft {
           0% {
             transform: translateX(0);
           }
@@ -63,7 +69,7 @@ export default function Ticker({ lang }: { lang: Lang }) {
           }
         }
 
-        @keyframes tickerScrollHe {
+        @keyframes shenkarTickerScrollRight {
           0% {
             transform: translateX(-50%);
           }

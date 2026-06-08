@@ -6,10 +6,10 @@ import { localized } from "@/lib/routes";
 type NavItem = { label: string; href: string };
 
 const navLinkClass =
-  "nav-link inline-flex h-[76px] items-center whitespace-nowrap text-[15px] font-semibold leading-none tracking-[0.11em] text-ivory/95 transition-colors hover:text-gold";
+  "nav-link inline-flex h-[76px] items-center whitespace-nowrap text-[16px] font-semibold leading-none tracking-[0.105em] text-ivory/95 transition-colors hover:text-gold";
 
 const dropdownLinkClass =
-  "nav-dropdown-link text-[16px] font-medium text-ivory/90 hover:text-gold";
+  "nav-dropdown-link text-[17px] font-medium text-ivory/90 hover:text-gold";
 
 function Dropdown({
   label,
@@ -24,7 +24,7 @@ function Dropdown({
     <div className="nav-dropdown relative flex h-[76px] items-center">
       <Link href={href} className={`${navLinkClass} gap-1.5`}>
         {label}
-        <span className="flex items-center text-[11px] leading-none opacity-75" aria-hidden>
+        <span className="flex items-center text-[12px] leading-none opacity-75" aria-hidden>
           ▾
         </span>
       </Link>
@@ -61,8 +61,8 @@ export default function Header({ lang }: { lang: Lang }) {
 
   const brandTypographyClass =
     lang === "he"
-      ? "text-[23px] font-semibold tracking-[0.01em]"
-      : "text-[25px] font-semibold tracking-[0.045em]";
+      ? "text-[25px] font-semibold tracking-[0.01em]"
+      : "text-[28px] font-semibold tracking-[0.04em]";
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-navy/90 backdrop-blur-md">
@@ -77,7 +77,7 @@ export default function Header({ lang }: { lang: Lang }) {
         </Link>
 
         <nav
-          className="absolute left-1/2 hidden h-[76px] -translate-x-1/2 items-center gap-9 md:flex"
+          className="absolute left-1/2 hidden h-[76px] -translate-x-1/2 items-center gap-10 md:flex"
           aria-label={ui.navigate}
           dir={lang === "he" ? "rtl" : "ltr"}
         >
@@ -124,7 +124,7 @@ export default function Header({ lang }: { lang: Lang }) {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className="text-[17px] font-semibold text-ivory no-underline hover:text-gold"
+                    className="text-[18px] font-semibold text-ivory no-underline hover:text-gold"
                   >
                     {item.label}
                   </Link>
@@ -139,7 +139,7 @@ export default function Header({ lang }: { lang: Lang }) {
                       <Link
                         key={item.href}
                         href={item.href}
-                        className="text-[15px] font-medium text-stone no-underline hover:text-ivory"
+                        className="text-[16px] font-medium text-stone no-underline hover:text-ivory"
                       >
                         {item.label}
                       </Link>
@@ -156,7 +156,7 @@ export default function Header({ lang }: { lang: Lang }) {
                       <Link
                         key={item.href}
                         href={item.href}
-                        className="text-[15px] font-medium text-stone no-underline hover:text-ivory"
+                        className="text-[16px] font-medium text-stone no-underline hover:text-ivory"
                       >
                         {item.label}
                       </Link>
