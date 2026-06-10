@@ -24,14 +24,22 @@ function Dropdown({
     <div className="nav-dropdown relative flex h-[76px] items-center">
       <Link href={href} className={`${navLinkClass} gap-1.5`}>
         {label}
-        <span className="flex items-center text-[12px] leading-none opacity-75" aria-hidden>
+        <span
+          className="flex items-center text-[12px] leading-none opacity-75"
+          aria-hidden
+        >
           ▾
         </span>
       </Link>
 
       <div className="nav-dropdown-menu" role="menu">
         {items.map((item) => (
-          <Link key={item.href} href={item.href} className={dropdownLinkClass} role="menuitem">
+          <Link
+            key={item.href}
+            href={item.href}
+            className={dropdownLinkClass}
+            role="menuitem"
+          >
             {item.label}
           </Link>
         ))}
@@ -57,7 +65,8 @@ export default function Header({ lang }: { lang: Lang }) {
   const teamLabel = lang === "he" ? "צוות" : "Team";
   const brandText = lang === "he" ? "שנקר ושות׳" : "Shenkar & Co.";
 
-  const brandPositionClass = lang === "he" ? "absolute right-[-18px]" : "absolute left-[-18px]";
+  const brandPositionClass =
+    lang === "he" ? "absolute right-[-18px]" : "absolute left-[-18px]";
 
   const brandTypographyClass =
     lang === "he"
@@ -70,7 +79,11 @@ export default function Header({ lang }: { lang: Lang }) {
         <Link
           href={lang === "he" ? "/" : "/en"}
           className={`${brandPositionClass} inline-flex h-[76px] items-center whitespace-nowrap leading-none text-ivory/90 no-underline transition-colors hover:text-gold ${brandTypographyClass}`}
-          style={lang === "he" ? { fontFamily: "'Assistant', Arial, sans-serif" } : undefined}
+          style={
+            lang === "he"
+              ? { fontFamily: "'Assistant', Arial, sans-serif" }
+              : undefined
+          }
           aria-label="Shenkar & Co. Law Firm"
         >
           {brandText}
@@ -94,7 +107,9 @@ export default function Header({ lang }: { lang: Lang }) {
           />
 
           {ui.nav
-            .filter((item) => item.label !== practiceLabel && item.label !== teamLabel)
+            .filter(
+              (item) => item.label !== practiceLabel && item.label !== teamLabel
+            )
             .map((item) => (
               <Link key={item.href} href={item.href} className={navLinkClass}>
                 {item.label}
@@ -102,7 +117,11 @@ export default function Header({ lang }: { lang: Lang }) {
             ))}
         </nav>
 
-        <div className={`${lang === "he" ? "mr-auto" : "ml-auto"} flex h-[76px] items-center gap-4`}>
+        <div
+          className={`${
+            lang === "he" ? "mr-auto" : "ml-auto"
+          } flex h-[76px] items-center gap-4`}
+        >
           <Link className={navLinkClass} href={ui.switchHref}>
             {ui.switchLabel}
           </Link>
