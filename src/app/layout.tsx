@@ -29,7 +29,6 @@ export const metadata: Metadata = {
   description:
     "Boutique law firm specializing in corporate law, M&A, venture capital and international business law.",
 
-  // זמני בלבד — להסיר כשמחברים את הדומיין ורוצים שהאתר יופיע בגוגל
   robots: {
     index: false,
     follow: false,
@@ -48,7 +47,22 @@ export const metadata: Metadata = {
     title: "Shenkar & Co. Law Firm",
     description:
       "Boutique law firm specializing in corporate law, M&A and international business law.",
-    images: ["/reka.png"],
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1400,
+        height: 1050,
+        alt: "Shenkar & Co. Law Offices",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Shenkar & Co. Law Firm",
+    description:
+      "Boutique law firm specializing in corporate law, M&A and international business law.",
+    images: ["/og-image.png"],
   },
 };
 
