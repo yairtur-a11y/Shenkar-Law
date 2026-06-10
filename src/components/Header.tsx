@@ -2,6 +2,7 @@ import Link from "next/link";
 import { UI, PRACTICE_AREAS, type Lang } from "@/data/content";
 import { TEAM_MEMBERS } from "@/data/team";
 import { localized } from "@/lib/routes";
+import LanguageSwitch from "@/components/LanguageSwitch";
 
 type NavItem = { label: string; href: string };
 
@@ -122,9 +123,11 @@ export default function Header({ lang }: { lang: Lang }) {
             lang === "he" ? "mr-auto" : "ml-auto"
           } flex h-[76px] items-center gap-4`}
         >
-          <Link className={navLinkClass} href={ui.switchHref}>
-            {ui.switchLabel}
-          </Link>
+          <LanguageSwitch
+            lang={lang}
+            label={ui.switchLabel}
+            className={navLinkClass}
+          />
 
           <details className="relative md:hidden">
             <summary
@@ -181,6 +184,14 @@ export default function Header({ lang }: { lang: Lang }) {
                       </Link>
                     ))}
                   </div>
+                </div>
+
+                <div className="border-t border-rule pt-4">
+                  <LanguageSwitch
+                    lang={lang}
+                    label={ui.switchLabel}
+                    className="text-[18px] font-semibold text-gold no-underline hover:text-ivory"
+                  />
                 </div>
               </div>
             </nav>
