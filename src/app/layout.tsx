@@ -27,44 +27,27 @@ export const metadata: Metadata = {
   },
 
   description:
-    "שנקר ושות׳ הוא משרד עורכי דין בוטיק העוסק במשפט מסחרי, מיזוגים ורכישות, הייטק, הון סיכון ועסקאות בינלאומיות.",
+    "Boutique law firm specializing in corporate law, M&A, venture capital and international business law.",
 
-  // זמני בלבד — עד שהאתר מוכן לעלייה רשמית
+  // זמני בלבד — להסיר כשמחברים את הדומיין ורוצים שהאתר יופיע בגוגל
   robots: {
     index: false,
     follow: false,
-    googleBot: {
-      index: false,
-      follow: false,
-    },
+  },
+
+  icons: {
+    icon: "/logo86.png",
+    shortcut: "/logo86.png",
+    apple: "/logo86.png",
   },
 
   openGraph: {
     type: "website",
     url: siteUrl,
     siteName: "Shenkar & Co.",
-    title: "שנקר ושות׳ | Shenkar & Co.",
+    title: "Shenkar & Co. Law Firm",
     description:
-      "משרד עורכי דין בוטיק העוסק במשפט מסחרי, מיזוגים ורכישות, הייטק, הון סיכון ועסקאות בינלאומיות.",
-    locale: "he_IL",
-    alternateLocale: "en_US",
-
-    // בהמשך נחליף לתמונה ייעודית: /og-image.jpg
-    images: [
-      {
-        url: "/reka.png",
-        width: 1200,
-        height: 630,
-        alt: "Shenkar & Co.",
-      },
-    ],
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "שנקר ושות׳ | Shenkar & Co.",
-    description:
-      "משרד עורכי דין בוטיק העוסק במשפט מסחרי, מיזוגים ורכישות, הייטק, הון סיכון ועסקאות בינלאומיות.",
+      "Boutique law firm specializing in corporate law, M&A and international business law.",
     images: ["/reka.png"],
   },
 };

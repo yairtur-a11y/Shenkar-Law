@@ -9,7 +9,7 @@ export default function HomePage({ lang }: { lang: Lang }) {
       <div className="relative overflow-hidden">
         <Hero lang={lang} />
 
-        <div className="absolute inset-x-0 top-[92vh] z-30">
+        <div className="absolute inset-x-0 bottom-0 z-30">
           <Ticker lang={lang} />
         </div>
       </div>
