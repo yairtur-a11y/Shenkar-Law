@@ -11,7 +11,10 @@ export default function Hero({ lang }: { lang: Lang }) {
       : "text-left md:-translate-x-[8vw] lg:-translate-x-[10vw]";
 
   return (
-    <section className="relative flex min-h-screen items-end overflow-hidden" dir={ui.dir}>
+    <section
+      className="relative flex min-h-screen items-end overflow-hidden"
+      dir={ui.dir}
+    >
       <Image
         src="/reka.png"
         alt="Modern city skyline"
@@ -21,9 +24,8 @@ export default function Hero({ lang }: { lang: Lang }) {
         className="object-cover"
       />
 
-      <div className="absolute inset-0 bg-gradient-to-b from-navy/40 to-navy/90" />
-
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(184,150,90,.18),transparent_28%),linear-gradient(to_right,rgba(10,14,26,.55),transparent_65%)]" />
+      {/* שכבת החשכה עדינה בלבד */}
+      <div className="absolute inset-0 bg-navy/15" />
 
       <div className="container relative z-10 pb-[15vh]">
         <div className={heroContentPosition}>
