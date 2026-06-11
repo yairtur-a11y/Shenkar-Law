@@ -3,14 +3,18 @@
 @tailwind utilities;
 
 :root { color-scheme: dark; }
+
 * { box-sizing: border-box; }
+
 html { scroll-behavior: smooth; }
+
 body {
   margin: 0;
   background: #0A0E1A;
   color: #F5F2EC;
   font-family: var(--font-body), sans-serif;
 }
+
 a { color: inherit; }
 
 /* Use the Hebrew body font consistently across the Hebrew site.
@@ -18,97 +22,227 @@ a { color: inherit; }
 .site-shell[lang="he"] {
   font-family: var(--font-body), sans-serif;
 }
+
 .site-shell[lang="he"] .font-display,
 .site-shell[lang="he"] .display-title,
 .site-shell[lang="he"] .nav-dropdown-link {
   font-family: var(--font-body), sans-serif !important;
 }
+
 .site-shell[lang="he"] .display-title {
   font-weight: 400;
   letter-spacing: -0.02em;
 }
 
-::selection { background: rgba(184,150,90,.35); }
+::selection { background: rgba(184, 150, 90, .35); }
 
-.container { width: min(80%, 1180px); margin-inline: auto; }
-.narrow { width: min(80%, 780px); margin-inline: auto; }
-.gold-rule { width: 48px; height: 1px; background: #B8965A; }
-.eyebrow { font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: #B8965A; margin: 0; }
-.display-title { font-family: var(--font-cormorant), serif; font-size: clamp(40px, 5vw, 64px); font-weight: 300; line-height: 1.1; margin: 16px 0 0; }
-.body-text { color: #9A9590; line-height: 1.85; }
-
-@keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
-@keyframes marqueeLtr { from { transform: translateX(0); } to { transform: translateX(-33.333%); } }
-@keyframes marqueeRtl { from { transform: translateX(-33.333%); } to { transform: translateX(0); } }
-.ticker-track { width: max-content; animation-timing-function: linear; animation-iteration-count: infinite; animation-delay: -8s; }
-.fade-up { animation: fadeUp .7s ease both; }
-
-.nav-link { font-size: 13px; letter-spacing: .15em; text-transform: uppercase; color: #9A9590; text-decoration: none; transition: color .2s; }
-.nav-link:hover, .nav-link:focus { color: #F5F2EC; }
-
-.team-card img { filter: grayscale(100%); transition: filter .5s ease, transform .5s ease; }
-.team-card:hover img { filter: grayscale(0%); transform: scale(1.03); }
-.team-card .accent { width: 0; transition: width .35s ease; }
-.team-card:hover .accent { width: 100%; }
-
-@media (max-width: 760px) {
-  .container, .narrow { width: min(88%, 1180px); }
+.container {
+  width: min(80%, 1180px);
+  margin-inline: auto;
 }
 
-.nav-dropdown { position: relative; padding-block: 26px; }
+.narrow {
+  width: min(80%, 780px);
+  margin-inline: auto;
+}
+
+.gold-rule {
+  width: 48px;
+  height: 1px;
+  background: #B8965A;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: #B8965A;
+  margin: 0;
+}
+
+.display-title {
+  font-family: var(--font-cormorant), serif;
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 300;
+  line-height: 1.1;
+  margin: 16px 0 0;
+}
+
+.body-text {
+  color: #9A9590;
+  line-height: 1.85;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes marqueeLtr {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-33.333%);
+  }
+}
+
+@keyframes marqueeRtl {
+  from {
+    transform: translateX(-33.333%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.ticker-track {
+  width: max-content;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: -8s;
+}
+
+.fade-up {
+  animation: fadeUp .7s ease both;
+}
+
+.nav-link {
+  font-size: 13px;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: #9A9590;
+  text-decoration: none;
+  transition: color .2s;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #F5F2EC;
+}
+
+.team-card img {
+  filter: grayscale(100%);
+  transition: filter .5s ease, transform .5s ease;
+}
+
+.team-card:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.03);
+}
+
+.team-card .accent {
+  width: 0;
+  transition: width .35s ease;
+}
+
+.team-card:hover .accent {
+  width: 100%;
+}
+
+@media (max-width: 760px) {
+  .container,
+  .narrow {
+    width: min(88%, 1180px);
+  }
+}
+
+/* =========================
+   Desktop dropdown menus
+   ========================= */
+
+.nav-dropdown {
+  position: relative;
+  padding-block: 26px;
+}
+
 .nav-dropdown-menu {
+  --dropdown-x: 0px;
+
   position: absolute;
   inset-inline-start: 0;
   top: 100%;
   min-width: 260px;
   padding: 10px 0;
-  border: 1px solid #1E2535;
-  background: #0F1520;
-  box-shadow: 0 22px 60px rgba(0,0,0,.55);
+
+  /* Gold subtle border */
+  border: 1px solid rgba(184, 150, 90, 0.18);
+
+  /* Blue background similar to the top header */
+  background: rgba(31, 42, 58, 0.98);
+
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.42);
   opacity: 0;
-  transform: translateY(-6px);
+  transform: translateX(var(--dropdown-x)) translateY(-6px);
   pointer-events: none;
   transition: opacity .18s ease, transform .18s ease;
 }
+
+/* Hebrew only: move the dropdown slightly right so it sits better under the label */
+nav[dir="rtl"] .nav-dropdown-menu {
+  --dropdown-x: 34px;
+}
+
+/* English remains aligned as before */
+nav[dir="ltr"] .nav-dropdown-menu {
+  --dropdown-x: 0px;
+}
+
 .nav-dropdown:hover .nav-dropdown-menu,
 .nav-dropdown:focus-within .nav-dropdown-menu {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(var(--dropdown-x)) translateY(0);
   pointer-events: auto;
 }
+
 .nav-dropdown-link {
   display: block;
   padding: 12px 22px;
   font-family: var(--font-cormorant), serif;
   font-size: 19px;
   font-weight: 300;
-  color: #9A9590;
+  color: #D8D2C8;
   text-decoration: none;
   white-space: nowrap;
   transition: color .18s ease, background .18s ease;
 }
+
 .nav-dropdown-link:hover,
 .nav-dropdown-link:focus {
   color: #F5F2EC;
-  background: rgba(184,150,90,.07);
+  background: rgba(184, 150, 90, 0.10);
 }
+
+/* =========================
+   Lawyer placeholders
+   ========================= */
 
 .lawyer-placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(184,150,90,.18);
+  border: 1px solid rgba(184, 150, 90, .18);
   background:
-    radial-gradient(circle at 30% 22%, rgba(184,150,90,.18), transparent 32%),
+    radial-gradient(circle at 30% 22%, rgba(184, 150, 90, .18), transparent 32%),
     linear-gradient(145deg, #121A28, #0A0E1A 62%, #0F1520);
 }
+
 .lawyer-placeholder span {
   width: 88px;
   height: 88px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(184,150,90,.45);
+  border: 1px solid rgba(184, 150, 90, .45);
   border-radius: 999px;
   color: #B8965A;
   font-family: var(--font-cormorant), serif;
@@ -116,5 +250,12 @@ a { color: inherit; }
   font-weight: 300;
   letter-spacing: .04em;
 }
-.team-card .lawyer-placeholder { transition: border-color .35s ease, transform .35s ease; }
-.team-card:hover .lawyer-placeholder { border-color: rgba(184,150,90,.48); transform: translateY(-2px); }
+
+.team-card .lawyer-placeholder {
+  transition: border-color .35s ease, transform .35s ease;
+}
+
+.team-card:hover .lawyer-placeholder {
+  border-color: rgba(184, 150, 90, .48);
+  transform: translateY(-2px);
+}

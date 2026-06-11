@@ -36,7 +36,7 @@ export default function Hero({ lang }: { lang: Lang }) {
             {ui.firm}
           </h1>
 
-          <p className="fade-up mt-3 font-display text-[clamp(22px,3vw,34px)] font-light tracking-[.05em] text-stone">
+          <p className="fade-up mt-3 font-display text-[clamp(22px,3vw,34px)] font-light tracking-[.05em] text-ivory">
             {ui.descriptor}
           </p>
         </div>
