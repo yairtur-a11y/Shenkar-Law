@@ -51,9 +51,9 @@ export default function Contact({ lang }: { lang: Lang }) {
           {items.map((item) => (
             <div
               key={item.k}
-              className="grid gap-4 border-b border-rule py-8 md:grid-cols-[120px_1fr] md:items-baseline"
+              className="grid gap-4 border-b border-rule py-8 md:grid-cols-[140px_1fr] md:items-baseline"
             >
-              <span className="text-xs uppercase tracking-[.15em] text-gold">
+              <span className="text-[15px] uppercase tracking-[.15em] text-gold">
                 {item.k}
               </span>
 
@@ -62,12 +62,12 @@ export default function Contact({ lang }: { lang: Lang }) {
                   href={item.href}
                   target={item.external ? "_blank" : undefined}
                   rel={item.external ? "noopener noreferrer" : undefined}
-                  className="font-display text-[clamp(24px,3vw,36px)] font-light text-ivory no-underline hover:text-gold"
+                  className="font-display text-[clamp(18px,2vw,26px)] font-light leading-snug text-ivory no-underline hover:text-gold"
                 >
                   {item.v}
                 </a>
               ) : (
-                <span className="font-display text-[clamp(24px,3vw,36px)] font-light text-ivory">
+                <span className="font-display text-[clamp(18px,2vw,26px)] font-light leading-snug text-ivory">
                   {item.v}
                 </span>
               )}

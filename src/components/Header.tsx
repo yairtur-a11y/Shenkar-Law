@@ -7,7 +7,7 @@ import LanguageSwitch from "@/components/LanguageSwitch";
 type NavItem = { label: string; href: string };
 
 const navLinkClass =
-  "nav-link inline-flex h-[76px] items-center whitespace-nowrap text-[16px] font-semibold leading-none tracking-[0.105em] text-ivory/95 transition-colors hover:text-gold";
+  "inline-flex h-[76px] items-center whitespace-nowrap text-[20px] font-semibold leading-none tracking-[0.105em] uppercase text-ivory/95 no-underline transition-colors hover:text-gold";
 
 const dropdownLinkClass =
   "nav-dropdown-link text-[17px] font-medium text-ivory/90 hover:text-gold";
@@ -71,8 +71,8 @@ export default function Header({ lang }: { lang: Lang }) {
 
   const brandTypographyClass =
     lang === "he"
-      ? "text-[25px] font-semibold tracking-[0.01em]"
-      : "text-[28px] font-semibold tracking-[0.04em]";
+      ? "text-[31px] font-normal tracking-[0.01em]"
+      : "text-[35px] font-normal tracking-[0.04em]";
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-navy/90 backdrop-blur-md">
