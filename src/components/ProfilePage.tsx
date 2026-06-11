@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { TEAM_MEMBERS } from "@/data/team";
 import { UI, type Lang } from "@/data/content";
@@ -42,10 +43,12 @@ export default function ProfilePage({ lang, slug }: { lang: Lang; slug: string }
         <div className="mt-10 grid gap-12 lg:grid-cols-[360px_1fr]">
           <div className="lawyer-placeholder relative aspect-[3/4] overflow-hidden bg-rule">
             {member.photo ? (
-              <img
+              <Image
                 src={member.photo}
                 alt={name}
-                className="h-full w-full object-cover"
+                fill
+                sizes="(max-width: 1024px) 100vw, 360px"
+                className="object-cover"
               />
             ) : (
               <span>{initials(name)}</span>
