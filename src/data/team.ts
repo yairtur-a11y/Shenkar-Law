@@ -148,18 +148,18 @@ export const TEAM_MEMBERS: TeamMember[] = [
     photo: "/images/team1/tomer.jpg",
   },
   {
-    slug: "don-emil-rantisi",
+    slug: "don-emil-rantissi",
     email: "Don@shenkarlaw.co.il",
     titleHe: "עורך דין",
     titleEn: "Attorney",
     nameHe: "עו״ד דון אמיל רנתיסי",
-    nameEn: "Adv. Don Emil Rantisi",
+    nameEn: "Adv. Don Emil Rantissi",
     bioHe: [
       "עו״ד דון אמיל רנתיסי עוסק במשפט מסחרי ובדיני חברות, עם התמקדות בעסקאות מיזוגים ורכישות. דון מעניק ליווי וייעוץ מקיף ללקוחות פרטיים ותאגידים, תוך התייחסות למכלול ההיבטים המשפטיים הנוגעים לפעילותם.",
       "דון הצטרף לצוות עורכי הדין לאחר השלמת התמחות במשרדנו ומעבר מבחני הלשכה בהצלחה.",
     ],
     bioEn: [
-      "Adv. Don Emil Rantisi practices commercial and corporate law, with a focus on mergers and acquisitions. Don provides comprehensive guidance and counsel to private clients and corporations, addressing the full range of legal aspects relating to their activity.",
+      "Adv. Don Emil Rantissi practices commercial and corporate law, with a focus on mergers and acquisitions. Don provides comprehensive guidance and counsel to private clients and corporations, addressing the full range of legal aspects relating to their activity.",
       "Don joined the firm’s team of attorneys after completing his internship at our firm and successfully passing the bar examinations.",
     ],
     educationHe: ["תואר ראשון במשפטים (LL.B), המרכז האקדמי רמת גן, 2023"],
