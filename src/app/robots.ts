@@ -7,9 +7,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: "*",
-
-        // זמני בלבד — עד שהאתר מוכן לעלייה רשמית
-        disallow: "/",
+        allow: "/",
       },
     ],
     sitemap: `${base}/sitemap.xml`,

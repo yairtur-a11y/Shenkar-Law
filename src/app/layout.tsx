@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     "Boutique law firm specializing in corporate law, M&A, venture capital and international business law.",
 
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
 
   icons: {
