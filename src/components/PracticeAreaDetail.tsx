@@ -4,14 +4,24 @@ import { localized } from "@/lib/routes";
 
 type PracticeArea = { num: string; slug: string; name: string; desc: string };
 
+function normalizeSlug(slug: string) {
+  try {
+    return decodeURIComponent(slug).trim();
+  } catch {
+    return slug.trim();
+  }
+}
+
 export function getPracticeArea(lang: Lang, slug: string): PracticeArea | undefined {
-  return PRACTICE_AREAS[lang].items.find((area) => area.slug === slug);
+  const cleanSlug = normalizeSlug(slug);
+  return PRACTICE_AREAS[lang].items.find((area) => area.slug === cleanSlug);
 }
 
 export default function PracticeAreaDetail({ lang, slug }: { lang: Lang; slug: string }) {
   const ui = UI[lang];
   const content = PRACTICE_AREAS[lang];
-  const area = getPracticeArea(lang, slug);
+  const cleanSlug = normalizeSlug(slug);
+  const area = getPracticeArea(lang, cleanSlug);
 
   if (!area) {
     return (
@@ -74,7 +84,7 @@ export default function PracticeAreaDetail({ lang, slug }: { lang: Lang; slug: s
                 key={item.slug}
                 href={localized(`/practice-areas/${item.slug}`, lang)}
                 className={`border px-4 py-2 text-sm no-underline transition-colors ${
-                  item.slug === slug
+                  item.slug === cleanSlug
                     ? "border-gold text-gold"
                     : "border-rule text-stone hover:border-gold hover:text-ivory"
                 }`}

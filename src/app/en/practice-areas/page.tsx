@@ -1,16 +1,11 @@
 import PageShell from "@/components/PageShell";
-import PracticeAreaDetail from "@/components/PracticeAreaDetail";
-import { PRACTICE_AREAS } from "@/data/content";
+import PracticeAreas from "@/components/PracticeAreas";
 
-export function generateStaticParams() {
-  return PRACTICE_AREAS.en.items.map((area) => ({ slug: area.slug }));
-}
-
-export default function Page({ params }: { params: { slug: string } }) {
+export default function Page() {
   return (
     <PageShell lang="en">
       <div className="pt-[72px]">
-        <PracticeAreaDetail lang="en" slug={params.slug} />
+        <PracticeAreas lang="en" />
       </div>
     </PageShell>
   );
