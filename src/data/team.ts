@@ -96,31 +96,6 @@ export const TEAM_MEMBERS: TeamMember[] = [
     photo: "/images/team1/yair-photo.jpg",
   },
   {
-    slug: "rebecca-salomon",
-    email: "Rebecca@shenkarlaw.co.il",
-    titleHe: "עורכת דין",
-    titleEn: "Attorney",
-    nameHe: "עו״ד רבקה סלומון",
-    nameEn: "Adv. Rebecca Salomon",
-    bioHe: [
-      "עו״ד רבקה סלומון השלימה את לימודי המשפטים בברזיל ועלתה לישראל לאחר שהשתתפה בתוכנית ״מסע״ של חילופי סטודנטים. רבקה דוברת פורטוגזית ואנגלית ומתמחה בעיקר בפעילות בינלאומית בתחום המשפט המסחרי ובעסקאות הון סיכון.",
-    ],
-    bioEn: [
-      "Adv. Rebecca Salomon completed her legal studies in Brazil and immigrated to Israel after participating in the Masa student exchange program. Rebecca speaks Portuguese and English, and focuses primarily on international commercial activity and venture capital transactions.",
-    ],
-    educationHe: [
-      "תואר ראשון במשפטים (LL.B), אוניברסיטת פורטלזה, 2010.",
-      "תואר שני במדע המדינה (M.A), אוניברסיטת תל אביב, 2014.",
-    ],
-    educationEn: [
-      "LL.B., University of Fortaleza, 2010.",
-      "M.A. in Political Science, Tel Aviv University, 2014.",
-    ],
-    admissionHe: ["לשכת עורכי הדין בישראל, 2019"],
-    admissionEn: ["Israel Bar Association, 2019"],
-    photo: "/images/team1/rebecca.jpg",
-  },
-  {
     slug: "tomer-laks",
     email: "Tomer@shenkarlaw.co.il",
     titleHe: "עורך דין",

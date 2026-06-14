@@ -24,7 +24,7 @@ export default function TeamGrid({ lang }: { lang: Lang }) {
         <h2 className="display-title">{lang === "he" ? "הצוות" : "The Team"}</h2>
         <div className="gold-rule mb-16 mt-5" />
 
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {TEAM_MEMBERS.map((member) => {
             const name = lang === "he" ? member.nameHe : member.nameEn;
             const title = lang === "he" ? member.titleHe : member.titleEn;
@@ -42,7 +42,7 @@ export default function TeamGrid({ lang }: { lang: Lang }) {
                         src={member.photo}
                         alt={name}
                         fill
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         className="object-cover"
                       />
                     ) : (
